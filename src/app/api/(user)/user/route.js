@@ -1,7 +1,7 @@
-import AuthService from "@/services/authService";
-import { connect } from "@/dbConfig/dbConfig";
+import AuthService from "@/src/services/authService";
+import { connect } from "@/src/dbConfig/dbConfig";
 import { NextResponse } from "next/server";
-import User from "@/models/user";
+import User from "@/src/models/user";
 
 connect();
 

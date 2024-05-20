@@ -9,6 +9,10 @@ const messageSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User'
   },
+  chat_channel_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Chat'
+  },
   message: String,
   is_seen: {
     type: Boolean,

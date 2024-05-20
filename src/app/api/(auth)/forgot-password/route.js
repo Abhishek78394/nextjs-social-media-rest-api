@@ -1,8 +1,8 @@
-import { connect } from "@/dbConfig/dbConfig";
-import Otp from "@/models/otp";
-import User from "@/models/user";
-import Helper from "@/services/helper";
-import { sendEmail } from "@/services/mailer";
+import { connect } from "@/src/dbConfig/dbConfig";
+import Otp from "@/src/models/otp";
+import User from "@/src/models/user";
+import Helper from "@/src/services/helper";
+import { sendEmail } from "@/src/services/mailer";
 import Joi from "joi";
 import { NextResponse } from "next/server";
 

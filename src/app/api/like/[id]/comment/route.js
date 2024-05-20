@@ -1,11 +1,11 @@
-import AuthService from "@/services/authService";
-import { connect } from "@/dbConfig/dbConfig";
+import AuthService from "@/src/services/authService";
+import { connect } from "@/src/dbConfig/dbConfig";
 import { NextResponse } from "next/server";
-import Comment from "@/models/comment";
-import Helper from "@/services/helper";
-import Post from "@/models/post";
+import Comment from "@/src/models/comment";
+import Helper from "@/src/services/helper";
+import Post from "@/src/models/post";
 import Joi from "joi";
-import Like from "@/models/like";
+import Like from "@/src/models/like";
 
 connect();
 

@@ -1,9 +1,10 @@
-import bcryptUtils from "@/services/hashService";
-import AuthService from "@/services/authService";
-import { connect } from "@/dbConfig/dbConfig";
+// import bcryptUtils from "@/services/hashService";
+import  bcryptUtils  from "@/src/services/hashService";
+import AuthService from "@/src/services/authService";
+import { connect } from "@/src/dbConfig/dbConfig";
 import { NextResponse } from "next/server";
-import Helper from "@/services/helper";
-import User from "@/models/user";
+import Helper from "@/src/services/helper";
+import User from "@/src/models/user";
 import Joi from "joi";
 
 connect();

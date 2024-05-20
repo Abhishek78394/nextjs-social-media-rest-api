@@ -1,7 +1,7 @@
-import AuthService from "@/services/authService";
-import { connect } from "@/dbConfig/dbConfig";
+import AuthService from "@/src/services/authService";
+import { connect } from "@/src/dbConfig/dbConfig";
 import { NextResponse } from "next/server";
-import Follower from "@/models/follower";
+import Follower from "@/src/models/follower";
 import Joi from "joi";
 
 connect();

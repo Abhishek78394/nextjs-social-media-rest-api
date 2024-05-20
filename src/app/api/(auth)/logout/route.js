@@ -1,9 +1,9 @@
-import bcryptUtils from "@/services/hashService";
-import AuthService from "@/services/authService";
-import { connect } from "@/dbConfig/dbConfig";
+import bcryptUtils from "@/src/services/hashService";
+import AuthService from "@/src/services/authService";
+import { connect } from "@/src/dbConfig/dbConfig";
 import { NextResponse } from "next/server";
 import { cookies } from 'next/headers';
-import User from "@/models/user";
+import User from "@/src/models/user";
 import Joi from "joi";
 
 connect();

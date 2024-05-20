@@ -1,8 +1,8 @@
-import AuthService from "@/services/authService";
-import { connect } from "@/dbConfig/dbConfig";
+import AuthService from "@/src/services/authService";
+import { connect } from "@/src/dbConfig/dbConfig";
 import { NextResponse } from "next/server";
-import Helper from "@/services/helper";
-import Post from "@/models/post";
+import Helper from "@/src/services/helper";
+import Post from "@/src/models/post";
 
 
 connect();

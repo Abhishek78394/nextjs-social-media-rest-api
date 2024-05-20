@@ -1,5 +1,5 @@
-import Follower from "@/models/follower";
-import Following from "@/models/following";
+import Follower from "@/src/models/follower";
+import Following from "@/src/models/following";
 import { writeFile } from "fs/promises";
 import { cookies } from "next/headers";
 
@@ -87,8 +87,8 @@ const Helper = {
       secure: process.env.NODE_ENV === 'production', 
       httpOnly: true, 
     });
-  }
- 
+  },
+
 };
 
 module.exports = Helper;

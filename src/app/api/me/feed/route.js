@@ -1,8 +1,8 @@
-import AuthService from "@/services/authService";
-import { connect } from "@/dbConfig/dbConfig";
+import AuthService from "@/src/services/authService";
+import { connect } from "@/src/dbConfig/dbConfig";
 import { NextResponse } from "next/server";
-import Helper from "@/services/helper";
-import Post from "@/models/post";
+import Helper from "@/src/services/helper";
+import Post from "@/src/models/post";
 
 
 connect();
@@ -17,9 +17,8 @@ export async function POST(req) {
         return NextResponse.json({ message: "Image and content are required", success: false }, { status: 400 });
       }
     const { user, error: authError } = await AuthService.verifyToken();
-
     if (authError) {
-      return NextResponse.json({ error: authError.message }, { status: 401 });
+      return NextResponse.json({ error: authError }, { status: 401 });
     }
     
     const uploadSuccess = await Helper.uploadFile(image, `./public/post/${image.name}`);

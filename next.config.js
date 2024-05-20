@@ -1,7 +1,6 @@
 module.exports = {
-    images: {
-      domains: ['localhost'],
-    },
-    reactStrictMode: false,
-  };
-  
+  images: {
+    domains: ['localhost'],
+  },
+  reactStrictMode: false, 
+};
